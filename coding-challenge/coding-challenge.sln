@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coding-challenge", "coding-challenge\coding-challenge.csproj", "{457FA886-C025-4E2B-AFB5-A40E2F4E9A49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coding-challenge-tests", "coding-challenge-tests\coding-challenge-tests.csproj", "{15ED4FEF-C926-4C05-87D3-D4921BA873DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{457FA886-C025-4E2B-AFB5-A40E2F4E9A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{457FA886-C025-4E2B-AFB5-A40E2F4E9A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{457FA886-C025-4E2B-AFB5-A40E2F4E9A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15ED4FEF-C926-4C05-87D3-D4921BA873DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15ED4FEF-C926-4C05-87D3-D4921BA873DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15ED4FEF-C926-4C05-87D3-D4921BA873DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15ED4FEF-C926-4C05-87D3-D4921BA873DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
