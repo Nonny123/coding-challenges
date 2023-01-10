@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Integers\" />
+    <Folder Include="Arrays\" />
     <Folder Include="Strings\CamelCase\" />
+    <Folder Include="Strings\Palindrome\" />
   </ItemGroup>
 
 </Project>
