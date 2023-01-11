@@ -1,0 +1,11 @@
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\bin\Debug\net5.0\coding-challenge.deps.json
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\bin\Debug\net5.0\coding-challenge.dll
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\bin\Debug\net5.0\ref\coding-challenge.dll
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\bin\Debug\net5.0\coding-challenge.pdb
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\obj\Debug\net5.0\coding-challenge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\obj\Debug\net5.0\coding-challenge.AssemblyInfoInputs.cache
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\obj\Debug\net5.0\coding-challenge.AssemblyInfo.cs
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\obj\Debug\net5.0\coding-challenge.csproj.CoreCompileInputs.cache
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\obj\Debug\net5.0\coding-challenge.dll
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\obj\Debug\net5.0\ref\coding-challenge.dll
+C:\Users\NONSO\source\repos\coding-challenges\coding-challenge\coding-challenge\obj\Debug\net5.0\coding-challenge.pdb
