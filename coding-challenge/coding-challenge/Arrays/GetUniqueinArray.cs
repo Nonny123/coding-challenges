@@ -20,14 +20,20 @@ namespace coding_challenge.Arrays
 
             for (i = 0; i < arr.Length; i++)
             {
+                unique = true;
                 for (j = i+1; j < arr.Length; j++)
                 {
-                    if (arr[i] > arr[j])
+                    if (arr[i] == arr[j])
                         unique = false;
+                    break;
+                }
+                if(unique)
+                {
+                    return arr[i];
                 }
             }
 
-            //return ;
+            // ;
 
         }
     }
