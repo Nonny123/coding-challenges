@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace coding_challenge.Arrays
 {
-    class 
-    {
-    }
+    
     public static class GetUniqueinArray
     {
-
-        public static int UniqueinArray(int[] arr)
+        //input -> int[] arr = { 10, 34, 47, 47, 80 };
+        public static List<int> UniqueinArray(int[] arr)
         {
 
             int i,j;
             bool unique;
+            List<int> uniqueElements = new List<int>();
 
             for (i = 0; i < arr.Length; i++)
             {
@@ -24,16 +23,18 @@ namespace coding_challenge.Arrays
                 for (j = i+1; j < arr.Length; j++)
                 {
                     if (arr[i] == arr[j])
+                    {
                         unique = false;
-                    break;
+                        break;
+                    }
                 }
                 if(unique)
                 {
-                    return arr[i];
+                    uniqueElements.Add(arr[i]);                  
                 }
             }
 
-            // ;
+            return uniqueElements;
 
         }
     }
