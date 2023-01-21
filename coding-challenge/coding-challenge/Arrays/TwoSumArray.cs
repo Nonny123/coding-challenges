@@ -8,23 +8,23 @@ namespace coding_challenge.Arrays
 {
     public static class TwoSumArray
     {
-        public static List<int> TwoIntegersSumTarget(int[] arr, int target)
+        public static bool TwoIntegersSumTarget(int[] arr, int target)
         {
 
             for (int i = 0; i < arr.Length; i++)
             {
                 
-                for (j = i + 1; j < arr.Length; j++)
+                for (int j = 0; j < arr.Length; j++)
                 {
-                    if (arr[i] == arr[j])
+                    if (i != j)
                     {
-                       
-                        break;
-                    }
-                }
-               
-            }
 
+                        int sum = arr[i] + arr[j];
+                        if (sum == target)
+                            return true;
+                    }
+                }              
+            }
             return false;
 
         }
