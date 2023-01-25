@@ -8,23 +8,17 @@ namespace coding_challenge.Arrays
 {
     class CheckArrayContainsDuplicate
     {
-        public static bool CheckDuplicate(int[] arr, int target)
+        public static bool CheckDuplicate(params int[] x)
         {
 
-            for (int i = 0; i < arr.Length; i++)
+            Dictionary<int, int> d = new Dictionary<int, int>();
+            foreach(int i in x)
             {
-
-                for (int j = 0; j < arr.Length; j++)
-                {
-                    if (i != j)
-                    {
-
-                        int sum = arr[i] + arr[j];
-                        if (sum == target)
-                            return true;
-                    }
-                }
+                if (d.ContainsKey(i))
+                    return true;
+                else d.Add(i, 1);
             }
+
             return false;
 
         }
