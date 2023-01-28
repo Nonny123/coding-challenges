@@ -8,15 +8,16 @@ namespace coding_challenge.Arrays
 {
     public class CheckHigestOccurence
     {
-        public static bool MostFrequentNumbers(int[] x)
+        public static bool MostFrequentNumbers(int[] arr, Dictionary<string, int> dict)
         {
 
-            Dictionary<int, int> d = new Dictionary<int, int>();
-            foreach (int i in x)
+            List<int> intList = new List<int>();
+            foreach (int i in arr)
             {
-                if (d.ContainsKey(i))
-                    return true;
-                else d.Add(i, 1);
+                string key = i.ToString();
+                if (dict.ContainsKey(key))
+                    dict[key] += 1;
+                else dict[key] = 1;
             }
 
             return false;
