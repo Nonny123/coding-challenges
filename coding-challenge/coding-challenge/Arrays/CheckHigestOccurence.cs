@@ -8,7 +8,7 @@ namespace coding_challenge.Arrays
 {
     public class CheckHigestOccurence
     {
-        public static bool MostFrequentNumbers(int[] arr, Dictionary<string, int> dict)
+        public static List<int> MostFrequentNumbers(int[] arr, Dictionary<string, int> dict)
         {
 
             List<int> intList = new List<int>();
@@ -20,7 +20,26 @@ namespace coding_challenge.Arrays
                 else dict[key] = 1;
             }
 
-            return false;
+            string firstStringElement = arr[0].ToString();
+            int mostCount = dict[firstStringElement];
+
+            foreach(string s in dict.Keys)
+            {
+                if(dict[s] > mostCount)
+                {
+                    mostCount = dict[s];
+                }
+            }
+
+            foreach (string s in dict.Keys)
+            {
+                if (dict[s] == mostCount)
+                {
+                    intList.Add(int.Parse(s));
+                }
+            }
+
+            return intList;
 
         }
     }
