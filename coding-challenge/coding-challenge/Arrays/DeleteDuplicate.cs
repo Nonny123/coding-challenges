@@ -11,13 +11,15 @@ namespace coding_challenge.Arrays
         public static int[] DeleteDuplicateInArray(int[] arr)
         {
 
-            int i, j;
-            bool unique;
-            List<int> uniqueElements = new List<int>();
+            int i, j, k;
+
+            int arrLength = arr.Length;
+            
+            
 
             for (i = 0; i < arr.Length; i++)
             {
-                unique = true;
+               //if any duplicate record
                 for (j = i + 1; j < arr.Length; j++)
                 {
                     if (arr[i] == arr[j])
