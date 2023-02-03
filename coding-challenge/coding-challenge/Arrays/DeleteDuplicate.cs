@@ -19,19 +19,19 @@ namespace coding_challenge.Arrays
 
             for (i = 0; i < arr.Length; i++)
             {
-               //if any duplicate record
+               
                 for (j = i + 1; j < arr.Length; j++)
                 {
+                    //if any duplicate record
                     if (arr[i] == arr[j])
                     {
-                        unique = false;
-                        break;
-                    }
+                        //delete duplicate
+                        for (k = j; k < arrLength - 1; k++)
+                        {
+                            arr[k] =arr[k + 1]
+                        }
                 }
-                if (unique)
-                {
-                    uniqueElements.Add(arr[i]);
-                }
+                
             }
 
             return uniqueElements;
