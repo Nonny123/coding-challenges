@@ -28,13 +28,29 @@ namespace coding_challenge.Arrays
                         //delete duplicate
                         for (k = j; k < arrLength - 1; k++)
                         {
-                            arr[k] =arr[k + 1]
+                            arr[k] = arr[k + 1];
+                            //decrease size after removing duplicate
+                            arrLength--;
+                            //if shifting of element occurs then don't increment
+                            j--;
                         }
+                    }
                 }
-                
-            }
 
-            return uniqueElements;
+                //print array after deleting duplicate elements
+                string res = "";
+                for (i = 0; i < arr.Length; i++)
+                {
+                    res += x[i] + ",";
+                }
+
+                string trimmedStr = res.TrimEnd(',');
+
+                //retu
+
+
+
+            
 
         }
     }
