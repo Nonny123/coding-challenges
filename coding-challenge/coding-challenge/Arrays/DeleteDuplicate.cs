@@ -41,12 +41,16 @@ namespace coding_challenge.Arrays
                 string res = "";
                 for (i = 0; i < arr.Length; i++)
                 {
-                    res += x[i] + ",";
+                    res += arr[i] + ",";
                 }
 
                 string trimmedStr = res.TrimEnd(',');
 
-                //retu
+                //return trimmedStr;
+
+                int[] arrConv = Array.ConvertAll<string, int>(trimmedStr.Split(','), Convert.ToInt32);
+
+                return arrConv;
 
 
 
