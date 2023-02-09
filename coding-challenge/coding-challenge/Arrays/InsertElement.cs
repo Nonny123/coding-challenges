@@ -8,12 +8,15 @@ namespace coding_challenge.Arrays
 {
     public class InsertElement
     {
-        public static List<int> InsertElementInErray(int[] arr)
+        public static List<int> InsertElementInErray(int[] arr, int element, int position)
         {
 
-            int i, j;
-            bool unique;
-            List<int> uniqueElements = new List<int>();
+            int i = 0;
+            int size = arr.Length;
+            int[] arr2;
+            
+            if(position > size + 1 || position <= 0)
+           
 
             for (i = 0; i < arr.Length; i++)
             {
