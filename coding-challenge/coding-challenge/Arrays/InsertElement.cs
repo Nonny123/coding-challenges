@@ -14,28 +14,23 @@ namespace coding_challenge.Arrays
             int i = 0;
             int size = arr.Length;
             int[] arr2;
-            
-            if(position > size + 1 || position <= 0)
-           
 
-            for (i = 0; i < arr.Length; i++)
+            if (position > size + 1 || position <= 0)
             {
-                unique = true;
-                for (j = i + 1; j < arr.Length; j++)
-                {
-                    if (arr[i] == arr[j])
-                    {
-                        unique = false;
-                        break;
-                    }
-                }
-                if (unique)
-                {
-                    uniqueElements.Add(arr[i]);
-                }
+                //console
             }
+            else 
+            {
+                arr2 = new int[size + 1];
+                for (i = size; i >= position; i--)
+                {
+                    arr2[i] = arr[i - 1];
+                }
 
-            return uniqueElements;
+                arr2[position - 1] = element;
+                size++
+
+            }
 
         }
     }
