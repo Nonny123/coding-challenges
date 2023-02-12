@@ -28,10 +28,22 @@ namespace coding_challenge.Arrays
                 }
 
                 arr2[position - 1] = element;
-                size++
+                size++;
+
+                for (i = 0; i < position - 1; i++)
+                {
+                    arr2[i] = arr[i];
+                }
+
+                for (i = 0; i < size; i++)
+                {
+                    Console.Write("{0}\t",arr2[i]);
+                }
 
             }
 
         }
+
+        
     }
 }
