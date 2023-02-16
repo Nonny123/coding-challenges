@@ -8,54 +8,26 @@ namespace coding_challenge.Arrays
 {
     public class DeleteElement
     {
-        public static int[] DeleteElementInArray(int[] arr)
+        public static void DeleteElementInArray(int[] arr, int element, int position)
         {
 
-            int i, j, k;
+            int i = 0;
 
-            int arrLength = arr.Length;
-
-
-
-            for (i = 0; i < arr.Length; i++)
+            int size = arr.Length;
+            if(position < 0 || position > size)
             {
 
-                for (j = i + 1; j < arr.Length; j++)
-                {
-                    //if any duplicate record
-                    if (arr[i] == arr[j])
-                    {
-                        //delete duplicate
-                        for (k = j; k < arrLength - 1; k++)
-                        {
-                            arr[k] = arr[k + 1];
-                            //decrease size after removing duplicate
-                            arrLength--;
-                            //if shifting of element occurs then don't increment
-                            j--;
-                        }
-                    }
-                }
-
-                //print array after deleting duplicate elements
-                string res = "";
-                for (i = 0; i < arr.Length; i++)
-                {
-                    res += arr[i] + ",";
-                }
-
-                string trimmedStr = res.TrimEnd(',');
-
-                //return trimmedStr;
-
-                int[] arrConv = Array.ConvertAll<string, int>(trimmedStr.Split(','), Convert.ToInt32);
-
-                return arrConv;
-
-
-
-
-
             }
+            else
+            {
+                for(i = position - 1; i < size - 1; i++)
+                {
+
+                }
+            }
+
+
+
         }
+    }
 }
