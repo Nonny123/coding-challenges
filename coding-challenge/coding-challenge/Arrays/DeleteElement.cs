@@ -16,14 +16,22 @@ namespace coding_challenge.Arrays
             int size = arr.Length;
             if(position < 0 || position > size)
             {
-
+                Console.Write("Invalid position. Enter a position between 1 to {0}", size);
             }
             else
             {
+                //copy next element value to current element
                 for(i = position - 1; i < size - 1; i++)
                 {
-
+                    arr[i] = arr[i + 1];
                 }
+                //dercrese array size by 1
+                size--;
+            }
+
+            for (i = 0; i < size; i++)
+            {
+                Console.Write("{0}\t", arr[i]);
             }
 
 
