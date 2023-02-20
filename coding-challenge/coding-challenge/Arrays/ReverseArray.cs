@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace coding_challenge.Arrays
 {
-    public class ReverseArray
+    public static class ReverseArray
     {
-        public static bool ReverseArrayElements(params int[] x)
+        public static void ReverseArrayElements(int[] arr)
         {
 
-            Dictionary<int, int> d = new Dictionary<int, int>();
-            foreach (int i in x)
+            for(int i = 0; i < arr.Length/2; i++)
             {
-                if (d.ContainsKey(i))
-                    return true;
-                else d.Add(i, 1);
+                int tmp = arr[i];
+                arr[i] = arr[arr.Length - i - 1];
+                arr[arr.Length - i - 1] = tmp;
             }
 
-            return false;
+           
 
         }
     }
