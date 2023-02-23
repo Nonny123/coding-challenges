@@ -17,6 +17,18 @@ namespace coding_challenge.Arrays
             a[2] = new int[2] { 20, 90 };
             a[3] = new int[5] { 37, 9, 10,44, 80 };
 
+            //read array
+            for(int i = 0; i < 4; i++)
+            {
+                for(int j = 0; j < a[i].Length; j++)
+                {
+                    Console.WriteLine(a[i][j]);
+                    Console.Write(" ");
+                }
+
+                Console.WriteLine();
+            }
+
         }
     }
 }
