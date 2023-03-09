@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace coding_challenge.Strings.HighestOccurence
 {
-    class HighestOccurrenceInString
+    public class HighestOccurrenceInString
     {
+        public static char GetHighestOccuringChar(string s)
+        {
+            int CHAR_SIZE = 256;
+            int[] arrCount = new int[CHAR_SIZE];
+            int strLength = s.Length
+        }
     }
 }
