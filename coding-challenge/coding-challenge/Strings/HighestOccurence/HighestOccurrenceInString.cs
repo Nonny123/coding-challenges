@@ -22,9 +22,14 @@ namespace coding_challenge.Strings.HighestOccurence
 
             for (int i = 0; i < strLength; i++)
             {
-                arrCount[s[i]]++;
+               if(maxVal < arrCount[s[i]])
+                {
+                    maxVal = arrCount[i];
+                    res = s[i];
+                }
             }
 
+            return res;
         }
     }
 }
