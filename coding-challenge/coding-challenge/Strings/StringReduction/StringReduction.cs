@@ -8,7 +8,7 @@ namespace coding_challenge.Strings.StringReduction
 {
     public class StringReduction
     {
-        public static string StringReduction(string str)
+        public static string ReductionString(string str)
         {
             int a = 0; int b = 0; int c = 0;
             
@@ -22,6 +22,10 @@ namespace coding_challenge.Strings.StringReduction
             int max = 0;
 
             max = Math.Max(max, Math.Abs(a - b));
+            max = Math.Max(max, Math.Abs(a - c));
+            if (max == 0) return "2";
+
+            return max.ToString();
         }
     }
 }
