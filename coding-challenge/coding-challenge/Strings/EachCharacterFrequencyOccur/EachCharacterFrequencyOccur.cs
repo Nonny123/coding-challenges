@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace coding_challenge.Strings.EachCharacterFrequencyOccur
 {
     public class EachCharacterFrequencyOccur
     {
-        public static List<char> CharacterFrequency(string s)
+        public static void EachCharacterOccurence(string str)
         {
-            List<char> chars = new List<char>();
-            foreach (char c in s)
+            var FreQ = from x in str group x by x into y select y;
+            foreach (var ArrEle in FreQ)
             {
-                if (!chars.Contains(c))
-                {
-                    chars.Add(c);
-                }
+                Console.WriteLine("Character")
             }
 
-            return chars;
+            
         }
     }
 }
