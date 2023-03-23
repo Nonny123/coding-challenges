@@ -11,7 +11,7 @@ namespace coding_challenge.Strings.EachCharacterFrequencyOccur
             var FreQ = from x in str group x by x into y select y;
             foreach (var ArrEle in FreQ)
             {
-                Console.WriteLine("Character")
+                Console.WriteLine("Character" + ArrEle.Key + ":" + ArrEle.Count() + "times");
             }
 
             
