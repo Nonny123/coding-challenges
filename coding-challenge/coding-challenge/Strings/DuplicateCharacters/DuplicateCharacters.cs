@@ -8,5 +8,15 @@ namespace coding_challenge.Strings.DuplicateCharacters
 {
     public class DuplicateCharacters
     {
+        public static StringBuilder GetDuplicateCharacter(string s)
+        {
+            StringBuilder str = new StringBuilder();
+            StringBuilder Char = new StringBuilder();
+
+            foreach()
+            {
+
+            }
+        }
     }
 }
