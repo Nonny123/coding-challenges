@@ -13,10 +13,18 @@ namespace coding_challenge.Strings.DuplicateCharacters
             StringBuilder str = new StringBuilder();
             StringBuilder Char = new StringBuilder();
 
-            foreach()
+            foreach(var item in s)
             {
-
+                if(str.ToString().IndexOf(item.ToString().ToLower()) == -1)
+                {
+                    str.Append(item);
+                }
+                else
+                {
+                    Char.Append(item);
+                }
             }
+            return Char;
         }
     }
 }
