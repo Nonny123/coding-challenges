@@ -8,5 +8,10 @@ namespace coding_challenge.Strings.FizzBuzz
 {
     public class FizzBuzz
     {
+        public static string FizzBuzz(int num)
+        {
+            if (num == 0) return "0";
+            string str = "1";
+        }
     }
 }
