@@ -12,6 +12,19 @@ namespace coding_challenge.Strings.FizzBuzz
         {
             if (num == 0) return "0";
             string str = "1";
+
+            for(int i = 2; i <= num; i++)
+            {
+                str += "";
+                if(i % 3 == 0 && i % 5 == 0)
+                {
+                    str += "FizzBuzz"; continue;
+                }
+                if(i % 3 == 0)
+                {
+                    str += "Fizz"; continue;
+                }
+            }
         }
     }
 }
