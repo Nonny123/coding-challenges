@@ -8,7 +8,7 @@ namespace coding_challenge.Strings.FizzBuzz
 {
     public class FizzBuzz
     {
-        public static string FizzBuzz(int num)
+        public static string StrFizzBuzz(int num)
         {
             if (num == 0) return "0";
             string str = "1";
@@ -24,7 +24,14 @@ namespace coding_challenge.Strings.FizzBuzz
                 {
                     str += "Fizz"; continue;
                 }
+                if (i % 5 == 0)
+                {
+                    str += "Buzz"; continue;
+                }
+                str += i.ToString();
             }
+
+            return str;
         }
     }
 }
