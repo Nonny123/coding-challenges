@@ -14,7 +14,7 @@ namespace coding_challenge.Strings.StringMerge
             int half = str.Length / 2;
             for(int i = 0; i < half; i++)
             {
-                new += str[i].ToString() + str[i + half + 1].ToString();
+                newStr += str[i].ToString() + str[i + half + 1].ToString();
                     
             }
             return newStr;

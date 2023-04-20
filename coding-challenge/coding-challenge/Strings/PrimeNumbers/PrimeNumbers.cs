@@ -14,9 +14,9 @@ namespace coding_challenge.Strings.PrimeNumbers
 
             if (num > (int)UInt16.MaxValue + 1) return "false";
 
-            for(int i = 2; i < num/2 + 1; i++)
+            for(int i = 2; i < num/2 + 1; ++i)
             {
-                return "false";
+                if(num % i == 0) return "false";
             }
 
             return "true";
