@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <Folder Include="Integers\Fibonacci\" />
+    <Folder Include="Queues\" />
+    <Folder Include="Stacks\" />
     <Folder Include="Strings\CamelCase\" />
     <Folder Include="Strings\Palindrome\" />
   </ItemGroup>
