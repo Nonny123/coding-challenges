@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="BCL\Objects\" />
     <Folder Include="Integers\Fibonacci\" />
     <Folder Include="Queues\" />
     <Folder Include="Stacks\" />
