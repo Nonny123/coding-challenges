@@ -23,7 +23,7 @@ namespace coding_challenge.ExercismChallenges.Arrays
 
         public int Today()
         {
-            throw new NotImplementedException("Please implement the BirdCount.Today() method");
+            return birdsPerDay[birdsPerDay.Length - 1];
         }
 
         public void IncrementTodaysCount()
