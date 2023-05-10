@@ -28,7 +28,7 @@ namespace coding_challenge.ExercismChallenges.Arrays
 
         public void IncrementTodaysCount()
         {
-            throw new NotImplementedException("Please implement the BirdCount.IncrementTodaysCount() method");
+            birdsPerDay[birdsPerDay.Length - 1]++;
         }
 
         public bool HasDayWithoutBirds()
