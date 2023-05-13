@@ -33,7 +33,7 @@ namespace coding_challenge.ExercismChallenges.Arrays
 
         public bool HasDayWithoutBirds()
         {
-            throw new NotImplementedException("Please implement the BirdCount.HasDayWithoutBirds() method");
+            return Array.Exists(birdsPerDay, element => element == 0);
         }
 
         public int CountForFirstDays(int numberOfDays)
