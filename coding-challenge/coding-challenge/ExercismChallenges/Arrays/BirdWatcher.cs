@@ -38,12 +38,25 @@ namespace coding_challenge.ExercismChallenges.Arrays
 
         public int CountForFirstDays(int numberOfDays)
         {
-            throw new NotImplementedException("Please implement the BirdCount.CountForFirstDays() method");
+            int res = 0;
+            for (int i = 0; i < numberOfDays; i++)
+            {
+                res += birdsPerDay[i];
+            }
+
+            return res;
         }
 
         public int BusyDays()
         {
-            throw new NotImplementedException("Please implement the BirdCount.BusyDays() method");
+            int res = 0;
+            for (int i = 0; i < birdsPerDay.Length; i++)
+            {
+                if (birdsPerDay[i] >= 5)
+                    res += 1;
+            }
+
+            return res;
         }
     }
 
