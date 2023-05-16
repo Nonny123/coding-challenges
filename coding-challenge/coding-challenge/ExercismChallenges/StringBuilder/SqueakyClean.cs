@@ -10,7 +10,7 @@ namespace coding_challenge.ExercismChallenges.StringBuilder
     {
         public static string Clean(string identifier)
         {
-            throw new NotImplementedException($"Please implement the (static) Identifier.Clean() method");
+            return identifier.Replace(" ", "_");
         }
     }
 }
