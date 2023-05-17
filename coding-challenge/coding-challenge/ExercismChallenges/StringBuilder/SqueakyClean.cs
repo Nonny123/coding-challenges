@@ -10,7 +10,22 @@ namespace coding_challenge.ExercismChallenges.StringBuilder
     {
         public static string Clean(string identifier)
         {
-            return identifier.Replace(" ", "_");
+            for (int i = 0; i < identifier.Length; i++)
+            {
+
+
+
+                char c = identifier[i];
+
+                if (c == ' ')
+
+                {
+                }
+
+
+
+
+                    return identifier.Replace(" ", "_");
         }
     }
 }
