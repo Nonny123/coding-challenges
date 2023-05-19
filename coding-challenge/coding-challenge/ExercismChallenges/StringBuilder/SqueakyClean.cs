@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
+using System.Text.RegularExpressions;
+
 
 namespace coding_challenge.ExercismChallenges.StringBuilderExercises
 {
@@ -10,21 +10,20 @@ namespace coding_challenge.ExercismChallenges.StringBuilderExercises
     {
         public static string Clean(string identifier)
         {
-            StringBuilder sb = new StringBuilder();
+            identifier = Regex.Replace(identifier, @"\s", "_"); //replace any spaces with underscores
+            
+            identifier = Regex.Replace(identifier, @"-\D", new MatchEvaluator(ConvertToCamelCase)); //convert kebab-case to camelCase - à-ḃç" => "àḂç"
 
-            for (int i = 0; i < identifier.Length; i++)
-            {
+            identifier = Regex.Replace(identifier, "\\0", "CTRL");// replace control characters with the upper case string "CTRL"
 
-                char c = identifier[i];
-
-                if (c == ' ')
-                {
-                }
-
-
-
-
-                    return identifier.Replace(" ", "_");
+            return Regex.Replace(identifier, @"[α-ω]|\d|\W", "");//remove non-letters and Greek letters in the range  'α' to 'ω'
         }
+
+
+        private static string ConvertToCamelCase(Match mt)
+        {
+            return mt.Value[1].ToString().ToUpper();
+        }
+
     }
 }
