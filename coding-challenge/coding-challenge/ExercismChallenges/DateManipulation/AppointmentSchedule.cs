@@ -18,9 +18,32 @@ namespace coding_challenge.ExercismChallenges.DateManipulation
 
         }
 
+        //public static DateTime Schedule(string appointmentDateDescription)
+        //{
+        //    DateTime result;
+
+        //    if (DateTime.TryParseExact(appointmentDateDescription, "MMMM d, yyyy HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out result))
+        //    {
+        //        return result;
+        //    }
+        //    if (DateTime.TryParseExact(appointmentDateDescription, "M/d/yyyy HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out result))
+        //    {
+        //        return result;
+        //    }
+        //    if (DateTime.TryParseExact(appointmentDateDescription, "dddd, MMMM d, yyyy HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out result))
+        //    {
+
+        //        return result;
+        //    }
+        //    else
+        //    {
+        //        return new DateTime(0001, 00, 0, 0, 0, 0);
+        //    }
+        //}
+
         public static bool HasPassed(DateTime appointmentDate)
         {
-            return appointmentDate < Appointment.Schedule("7/25/2019 13:45:00") ? true : false;
+            return appointmentDate < DateTime.Now ? true : false;
         }
 
         public static bool IsAfternoonAppointment(DateTime appointmentDate)
@@ -45,12 +68,12 @@ namespace coding_challenge.ExercismChallenges.DateManipulation
                     break;
             }
 
-            return $"You have an appointment on {appointmentDate.ToString("M/d/yyyy")} {appointmentDate.ToString("hh:mm:ss tt")}.";
+            return $"You have an appointment on {appointmentDate.ToString("M/d/yyyy")} {appointmentDate.ToString("h:mm:ss tt")}.";
         }
 
         public static DateTime AnniversaryDate()
         {
-            return new DateTime(2019, 9, 15, 0, 0, 0);
+            return new DateTime(2023, 9, 15, 0, 0, 0);
         }
     }
 }
