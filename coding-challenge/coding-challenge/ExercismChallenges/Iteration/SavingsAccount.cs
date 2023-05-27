@@ -42,7 +42,9 @@ namespace coding_challenge.ExercismChallenges.Iteration
 
         public static decimal AnnualBalanceUpdate(decimal balance)
         {
-            throw new NotImplementedException("Please implement the (static) SavingsAccount.AnnualBalanceUpdate() method");
+            var interest = SavingsAccount.Interest(balance);
+
+            return balance + interest;
         }
 
         public static int YearsBeforeDesiredBalance(decimal balance, decimal targetBalance)
