@@ -10,7 +10,27 @@ namespace coding_challenge.ExercismChallenges.Iteration
     {
         public static float InterestRate(decimal balance)
         {
-            throw new NotImplementedException("Please implement the (static) SavingsAccount.InterestRate() method");
+            float interestRate = float.MinValue;
+            switch (balance)
+            {
+                case var rate when rate < 0:
+                    interestRate = 3.213f;
+                    break;
+                case var rate when rate < 1000:
+                    interestRate = 0.5f;
+                    break;
+                case var rate when rate >= 1000 && rate < 5000:
+                    interestRate = 1.621f;
+                    break;
+                case var rate when rate >= 5000:
+                    interestRate = 2.475f;
+                    break;
+                default:
+                    interestRate = float.MinValue;
+                    break;
+            }
+
+            return interestRate;
         }
 
         public static decimal Interest(decimal balance)
