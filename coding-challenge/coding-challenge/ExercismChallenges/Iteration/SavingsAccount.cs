@@ -35,7 +35,9 @@ namespace coding_challenge.ExercismChallenges.Iteration
 
         public static decimal Interest(decimal balance)
         {
-            throw new NotImplementedException("Please implement the (static) SavingsAccount.Interest() method");
+            var interestRate = SavingsAccount.InterestRate(balance);
+
+            return ((decimal)interestRate * balance) / 100;
         }
 
         public static decimal AnnualBalanceUpdate(decimal balance)
