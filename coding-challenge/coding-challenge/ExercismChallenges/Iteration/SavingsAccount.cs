@@ -49,9 +49,15 @@ namespace coding_challenge.ExercismChallenges.Iteration
 
         public static int YearsBeforeDesiredBalance(decimal balance, decimal targetBalance)
         {
-            var res = targetBalance - balance;
+            var numberOfyears = 0;
 
-            return (int)res;
+            //increase balance until it gets to targetBalance	
+            while (targetBalance > balance)
+            {
+                balance = AnnualBalanceUpdate(balance);
+                numberOfyears++;
+            }
+            return numberOfyears;
         }
     }
 }
