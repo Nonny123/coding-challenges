@@ -49,7 +49,9 @@ namespace coding_challenge.ExercismChallenges.Iteration
 
         public static int YearsBeforeDesiredBalance(decimal balance, decimal targetBalance)
         {
-            throw new NotImplementedException("Please implement the (static) SavingsAccount.YearsBeforeDesiredBalance() method");
+            var res = targetBalance - balance;
+
+            return (int)res;
         }
     }
 }
