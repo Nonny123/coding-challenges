@@ -8,7 +8,15 @@ namespace coding_challenge.ExercismChallenges.Classes
 {
     class NeedForSpeedRemoteControlCar
     {
-        // TODO: define the constructor for the 'RemoteControlCar' class
+        private int speed;
+        private int batteryDrain;
+   
+        public NeedForSpeedRemoteControlCar(int speed, int batteryDrain)
+        {
+            this.speed = speed;
+            this.batteryDrain = batteryDrain;
+        }
+     
 
         public bool BatteryDrained()
         {
@@ -33,7 +41,12 @@ namespace coding_challenge.ExercismChallenges.Classes
 
     class RaceTrack
     {
-        // TODO: define the constructor for the 'RaceTrack' class
+        private int distance;
+
+        public RaceTrack(int distance)
+        {
+            this.distance = distance;
+        }
 
         public bool TryFinishTrack(RemoteControlCar car)
         {
