@@ -10,7 +10,8 @@ namespace coding_challenge.ExercismChallenges.Classes
     {
         private int speed;
         private int batteryDrain;
-   
+        private int _battery = 100;
+
         public NeedForSpeedRemoteControlCar(int speed, int batteryDrain)
         {
             this.speed = speed;
